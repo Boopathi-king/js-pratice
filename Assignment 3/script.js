@@ -25,6 +25,9 @@ console.log("Bloodpressure-->",  bloodPressure);
 console.log("Disease--->", disease);
 console.log("Alcohal--->", alcohol);
 
+console.log("-------------------------------------------------");
+
+
 if (age < 18) {
     console.log("You are not eligible,Age is low");
 } else if (weight < 60) {
@@ -40,3 +43,5 @@ if (age < 18) {
 } else {
     console.log("You are eligible");
 }
+
+console.log("-------------------------------------------------------------");
