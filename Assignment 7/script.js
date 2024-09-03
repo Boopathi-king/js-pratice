@@ -143,3 +143,43 @@ console.log("Repdigit value is----->", repDigit(25));
 console.log("Repdigit value is----->", repDigit(66));
 
 
+/*9.Write a function ‘addWithSurcharge’ that adds two amounts with surcharge. For each 
+amount less than or equal to 10, the surcharge is 1. For each amount greater than 10, the 
+surcharge is 2.
+Example: addWithSurcharge(5, 15) should return 23. */
+
+function addWithSurcharge(value1, value2) {
+    
+    let surchargeone = value1 <=10 ? 1 : 2;
+    let surchargetwo = value2 <=10 ? 1 : 2;
+
+    return value1 + surchargeone + value2 + surchargetwo ;
+}
+
+
+console.log("Add value is --->", addWithSurcharge(5, 15));
+
+console.log("-----------------------------------------------------");
+
+
+/*10.Write a function ‘sumMultiples’ taking a natural number n and returning the sum of all 
+multiples of 3 and of 5 that are truly less than n.
+Example: All multiples of 3 and 5 less than 20 are 3, 5, 6, 9, 10, 12, 15 and 18. Their sum is 
+78. sumMultiples(20) should return 78.
+ */
+
+
+function sumMultiples () {
+    let n = arguments[0];
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            sum += i;
+            }
+            }
+            return sum;
+}
+
+console.log("Summultiples values are--->", sumMultiples(20));
+
+console.log("---------------------------------------------------");
