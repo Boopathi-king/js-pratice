@@ -131,7 +131,7 @@ Example: repdigit(22) should return 'Repdigit!' and repdigit(23) should return '
 
 function repDigit() {
     let number = arguments[0];
-    let str = number.toString();
+     let str = number.toString();
     if (str[0] == str[1]) {
         return 'Repdigit!';
         } else {
@@ -141,6 +141,7 @@ function repDigit() {
 
 console.log("Repdigit value is----->", repDigit(25));
 console.log("Repdigit value is----->", repDigit(66));
+console.log("-----------------------------------------------");
 
 
 /*9.Write a function ‘addWithSurcharge’ that adds two amounts with surcharge. For each 
