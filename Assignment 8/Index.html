@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+</head>
+<body>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+    </ul>
+
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+
+    <div class="menu-item">Item 1</div>
+    <div class="menu-item">Item 2</div>
+    <div class="menu-item">Item 3</div>
+
+
+    <div id="parent-item">
+        <div id="sub-item">Child Item</div>
+       </div>
+
+       <div id="container">
+        <div class="one">Item 1</div>
+        <div class="one">Item 2</div>
+        <div class="one">Item 3</div>
+       </div>
+
+
+       <ul id="list">
+        <li>First item</li>
+        <li>Middle item</li>
+        <li>Last item</li>
+       </ul>
+
+       <ul>
+        <li>First item</li>
+        <li class="middle">Middle item</li>
+        <li>Last item</li>
+       </ul>
+
+    <script>
+/*1.Write a JavaScript statement to select an HTML element with the ID header and log it to the 
+    console.*/ 
+        let firstpara = document.getElementById('firstpara');
+        console.log(firstpara);
+        console.log("---------------------------------------------------");
+        
+ /*2. Selecting Elements by Class Name
+Given the HTML structure below, write a JavaScript statement to select all elements with the 
+class item and log them to the console.*/
+        let items = document.getElementsByClassName('item');
+        console.log(items);
+        console.log("---------------------------------------------------");
+
+
+ /*3.Selecting Elements by Tag Name
+    Select all <p> elements on the page and change their text color to blue.
+    create own html with any structure, and do the function above.*/
+    let paras = document.getElementsByTagName('p');
+    console.log(paras);
+    console.log("---------------------------------------------------");
+
+
+/*4.Selecting the First Matching Element using Query Selector
+Select the first element with the class card and log it to the console.
+*/
+    let cards = document.querySelector('.card')
+    console.log(cards);
+    console.log("---------------------------------------------------");
+
+/*5.. Selecting All Matching Elements using Query Selector
+Use querySelectorAll to select all elements with the class menu-item and log them to the 
+console.
+<div class="menu-item">Item 1</div>
+<div class="menu-item">Item 2</div>
+<div class="menu-item">Item 3</div>
+Use appropriate loop to loop over elements and see show it’s content.
+*/
+
+        let menu = document.querySelectorAll(".menu-item")
+        console.log(menu);
+        console.log("--------------------------------");
+        
+        // console.log("----------for of loop---------");
+        // for (const good of menu);
+        // console.log(good);
+        
+
+/*6.Parent Node Traversal
+Select an element with the ID sub-item and log its parent node to the console.
+<div id="parent-item">
+ <div id="sub-item">Child Item</div>
+</div>
+*/
+
+    let parent = document.querySelector("#sub-item");
+    console.log(parent.parentNode);
+    console.log("--------------------------------");
+    
+
+/*7.Child Node Traversal
+Select an element with the ID container and log all its child elements to the console.
+<div id="container">
+ <div class="one">Item 1</div>
+ <div class="one">Item 2</div>
+ <div class="one">Item 3</div>
+</div>*/
+
+let child = document.querySelectorAll('#container, .one');
+console.log(child);
+console.log("------------------------------------------");
+
+
+/*8.First and Last Child Traversal
+Select the element with the ID list and log its first and last child elements.
+<ul id="list">
+ <li>First item</li>
+ <li>Middle item</li>
+ <li>Last item</li>
+</ul>*/
+
+let first = document.querySelector('#list');
+console.log(first.firstElementChild);
+console.log("---------last element child--------");
+console.log(first.lastElementChild);
+console.log("--------------------------------");
+
+/*9.Next Sibling Traversal
+Select the element with the class middle and log its next sibling element to the console.
+<ul>
+ <li>First item</li>
+ <li class="middle">Middle item</li>
+ <li>Last item</li>
+</ul>
+*/
+let next = document.querySelector('.middle');
+console.log(next.nextElementSibling);
+console.log("--------------------------------");
+
+/*10.Previous Sibling Traversal
+Select the element with the class middle and log its previous sibling element.
+<ul>
+ <li>First item</li>
+ <li class="middle">Middle item</li>
+ <li>Last item</li>
+</ul>*/
+let prev = document.querySelector('.middle');
+console.log(prev.previousElementSibling);   
+
+    </script>
+</body>
+</html>
