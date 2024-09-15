@@ -1,12 +1,9 @@
-// import React from 'react';
-import './Navbar.css'
-
 
 const NavBar = () => {
     
     return (
         <div classname="nav">
-        <header className='header'>
+        {/* <header className='header'> */}
           <a href='/' className='logo'>Logo</a>
 
           <nav className='navbar'>
@@ -16,7 +13,7 @@ const NavBar = () => {
             <a href='/'>Services</a>
             <a href='/'>About us</a>
           </nav>
-        </header>
+        {/* </header> */}
         </div>
       
     );
