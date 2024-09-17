@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.store-btn {
+    display: flex;
+    background-color: #4CAF50;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 300px;
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 10px 20px hsl(10%, 20%, 50%) black;
+    border-radius: 20px;
+}
+
+.clear-btn {
+    display: flex;
+    background-color: #af6b4c;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 200px 300px;
+    width: 20%;
+    height: 40px;
+    font-size: 18px;
+    box-shadow: 10px 20px hsl(10%, 20%, 50%) black;
+    border-radius: 20px;
+}
