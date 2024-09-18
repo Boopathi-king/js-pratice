@@ -11,9 +11,10 @@ function userstore() {
         address: address,
     }
     sessionStorage.setItem('user', JSON.stringify(userdata));
-    console.log(userdata);
+    alert("User data stored successfully!");
 }
 
 function clearuser() {
     sessionStorage.removeItem('user');
+    alert("User data cleared!");
 }
