@@ -4,12 +4,12 @@ const Cartvalue = (props) => {
     let {
         userId,
         Date,
-        Product,
+        ProductId,
     } = props;
 
     console.log(userId);
     console.log(Date);
-    console.log(Product);
+    console.log(ProductId);
     
 
 
@@ -18,7 +18,7 @@ const Cartvalue = (props) => {
     <div>
         <h3>User Id: {userId}</h3>
         <p>Date: {Date}</p>
-        <p>Product: {Product}</p>
+        <p>Product: {ProductId}</p>
     </div>
   )
 }

@@ -10,7 +10,10 @@ const Cart = () => {
                 key={crt.id}
                 userId= {crt.userId}
                 Date={crt.date}
-                Product={crt.products.productsId}
+                ProductId= {crt.products.forEach(productId => {
+                 
+                  return productId
+                })}
             
             
             />
