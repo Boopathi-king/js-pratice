@@ -10,7 +10,7 @@
         }
 
         const users = await response.json();
-        console.log(users);
+        // console.log(users);
         
         displayUsers(users);
         } catch(error) {
@@ -45,6 +45,9 @@
 function displayUsers(users) {
 const userContainer = document.getElementById("user-container");
 
+// console.log(userContainer);
+
+
 const userArr = users.map((user) => {
     return ` 
     <div id= "product- ${user.id}" class = "user-card">
@@ -58,6 +61,9 @@ const userArr = users.map((user) => {
     ;`
     })
     .join("");
+
+    console.log(userArr);
+    
 
     userContainer.innerHTML = userArr;
 }
